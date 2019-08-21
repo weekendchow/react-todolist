@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+}
+
+
+.title {
+    font-size: 2rem;
+    font-weight: 150;
+}
+
+
+
+.addTodo{
+    margin-top: 1rem;
+   
+}
+
+.textfield {
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    height: 2rem;
+    width: 19rem;
+    border-width: 0.01rem;
+    border-style: solid;
+    border-color: rgb(166, 166, 166);
+    display: inline-block;
+    font-size: 0.85rem;
+    padding-left: 0.8rem;
+}
+
+.textfield:hover{
+    border-color: black;
+}
+
+.textfield:focus {
+    border-color: rgb(0, 120, 212);
+    background-color: rgb(199, 224, 244);
+}
+
+.submitAdd{
+    margin-left: 1rem;
+    border: none;
+    height: 2rem;
+    width: 5rem;
+    background-color: rgb(0, 120, 212);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: inline-block
+}
+
+.filter{
+    margin: 1rem;
+    align-self: flex-start;
+    
+}
+
+.filter button{
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 300;
+    
+}
+
+.filter button.selected {
+    font-weight: bold;
+    border-bottom: 0.1rem solid rgb(0, 120, 212);
+    font-size: 0.85rem;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 18rem;
+    }
+
+    .textfield {
+        width: 14rem;
+    }
+
+    .submitAdd {
+        width: 3rem;
+    }
+}
+

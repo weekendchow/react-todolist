@@ -1,0 +1,33 @@
+footer{
+    display: flex;
+    align-items: baseline;
+    margin-top: 2rem;
+    width: 25rem;
+    
+}
+
+footer span{
+    margin-right: auto;
+    font-size: 0.85rem;
+    font-weight: 300;
+    
+}
+
+.submitClear {
+
+    margin-left: auto;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    height: 2rem;
+    width: 9rem;
+    font-weight: 600;
+    font-size: 0.78rem;
+    font-family : inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        width: 18rem;
+    }
+}
+
